@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TEST</title>
+
+   <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+
+    <script src="/save.js" ></script>
+    <script src="/ExpantaNum.js" defer></script>
+<script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div v-if="player.stage==0">
+        
+      
+     <span class="opening">Hey! Before opening the game, charge the compater to open it!</span><br><br><button onclick="player.progress=player.progress.add(5)" class="Worst">
+      Charge!!! ({{format(player.progress)}}J/1,000J)
+      </button>
+        </div>
+      <div style="text-align:center;vertical-align:middle;position:relative" v-if="player.stage==1">
+        <img id="fuck-you-js-why-cant-iuse-window.innerHeight-inside-height" src="https://images2.alphacoders.com/941/941898.jpg">
+        <button style="position: absolute;left:60px; top:10px;outline: none;background-color: transparent;border:0px solid black; color:white;height:100px;height:100px">
+          <img src="https://cdn.glitch.global/48c6f376-d891-4ea1-80aa-53a885b3ad21/unnamed-modified.png?v=1679796616633" height="50" width="50"><br>
+          Idle Idle Idle <br>Gamedev
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
